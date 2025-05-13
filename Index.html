@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    
+</head>
+<style>
+    body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0074aa;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+    margin: 20px auto 80px; /* leave space for footer */
+    max-width: 800px;
+    box-sizing: border-box;
+    border: 4px solid #0074aa;
+    border-radius: 10px;
+}
+
+    header {
+        background-color: #0074aa;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+    }
+    h2 {
+        color: #000000;
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-family: poppins;
+        font-weight: 600;
+        text-align: center;
+    }
+    section {
+        margin-bottom: 20px;
+    }
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #0074aa;
+        color: rgb(255, 255, 255);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    button {
+        background-color: #0074aa;
+        color: #ffffff;
+        border: solid 0.5px #ffffff;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        
+    }
+    button:hover {
+        background-color: #771604;
+    }
+   extrainfo {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    a {
+        color: #0074aa;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <header>
+        <h1>Plp Web Dev February Cohort</h1>
+        <button onclick="changeTheme()">Change Theme</button>
+        
+    </header>
+    <main>
+        <section>
+            <h2>About the Program</h2>
+            <p id="aboutText">
+             Welcome to an exciting 8-week journey where you'll transform from a coding novice
+             to a confident front-end web developer!
+            </p>
+            <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+        </section>
+
+        <section>
+            <h2>Program Objectives</h2>
+            <p>
+                Understand the core concepts and structure of HTML for building well-structured web pages.<br>
+                Learn CSS to style and layout web pages, making them visually appealing and user-friendly.<br>
+                Gain proficiency in JavaScript to add interactivity and dynamic features to your web applications.<br>
+                Develop problem-solving skills through hands-on projects and real-world scenarios.<br>
+                Collaborate with peers to enhance teamwork and communication skills in a tech environment.
+            </p>
+        </section>
+
+        <section>
+            <h2>Course Schedule</h2>
+            <p>
+                Week 1: Introduction to HTML and CSS<br>
+                Week 2: Advanced CSS Techniques<br>
+                Week 3: JavaScript Basics<br>
+                Week 4: DOM Manipulation and Events<br>
+                Week 5: Responsive Web Design<br>
+                Week 6: Project Work and Collaboration<br>
+                Week 7: Final Project Development<br>
+                Week 8: Presentation and Feedback
+            </p>
+        </section>
+
+        <section>
+            <button onclick="toggleExtraInfo()">See Extra Info</button>
+        </section>
+
+        <div id="extrainfo" style="display: none;">
+            <h2>Extra Program Information</h2>
+            <p>The program will be self-paced but you will be required to practice daily.</p>
+            <a href="https://www.plp.co.ke" target="_blank">Visit our site for more info</a>
+            <p>We will be using the following tools:<br>
+                - Visual Studio Code<br>
+                - Git and GitHub<br>
+                - Chrome DevTools<br>
+                - Figma for design mockups
+            </p>
+        </div>
+    </main>
+</body>
+
+<!-- Footer -->
+<footer>
+    <p>&copy;PLP Web Dev 2025 All rights reserved</p>
+</footer>
+     <script src="script.js"></script>
+</html>
