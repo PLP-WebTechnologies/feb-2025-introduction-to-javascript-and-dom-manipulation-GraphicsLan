@@ -1,5 +1,5 @@
 
-alert("Welcome to PLP Web Dev February Cohort!");
+// alert("Welcome to PLP Web Dev February Cohort!");
 
 
 // Readmore Function
@@ -16,6 +16,7 @@ function toggleReadMore() {
             equip you with essential skills to build stunning, responsive, and interactive web pages.
             Get ready to learn and secure your future.
         `;
+        alert("You are reading more info");
         button.textContent = "Read Less";
         isExpanded = true;
     } else {
@@ -26,6 +27,9 @@ function toggleReadMore() {
         button.textContent = "Read More";
         isExpanded = false;
     }
+    return toggleReadMore()
+        
+    
 }
 
 
@@ -35,8 +39,9 @@ function changeTheme() {
     if (!darkMode) {
         document.body.style.backgroundColor = "#222";
         document.body.style.color = "#fff";
+        document.body.style.h2 = "#fff"
         document.querySelectorAll("section").forEach(section => {
-            section.style.backgroundColor = "#333";
+            section.style.backgroundColor = "#00000";
             section.style.borderRadius = "8px";
             section.style.padding = "10px";
         });
